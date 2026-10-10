@@ -1,0 +1,24 @@
+# Elixir
+/_build/
+/deps/
+/cover/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/config/*.secret.exs
+.elixir_ls/
+
+# Compiled NIF output
+/priv/native/
+
+# Rust (all crates under native/)
+/native/*/target/
+/native/*/.cargo/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

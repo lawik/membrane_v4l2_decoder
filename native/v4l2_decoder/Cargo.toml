@@ -1,0 +1,21 @@
+[package]
+name = "v4l2_decoder"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+name = "v4l2_decoder"
+path = "src/lib.rs"
+
+[[bin]]
+name = "v4l2-dec-dump"
+path = "src/bin/dump.rs"
+
+[dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+strip = "symbols"
